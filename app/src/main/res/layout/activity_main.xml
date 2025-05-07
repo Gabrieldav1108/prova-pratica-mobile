@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#6D1CAF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="80sp"
+            android:layout_marginRight="40sp"
+            android:backgroundTint="#5A6BD0"
+            android:onClick="abrirSite"
+            android:text="Ir para o site de Tabuada" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginRight="40sp"
+            android:backgroundTint="#5A6BD0"
+            android:onClick="TelaMultiplicacao"
+            android:text="Tabuada de multiplicação" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginRight="40sp"
+            android:backgroundTint="#5A6BD0"
+            android:onClick="TelaAdicao"
+            android:text="Tabuada de adição" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginRight="40sp"
+            android:backgroundTint="#5A6BD0"
+            android:onClick="TelaSubtracao"
+            android:text="Tabuada de subtração" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginRight="40sp"
+            android:backgroundTint="#5A6BD0"
+            android:onClick="TelaDivisao"
+            android:text="Tabuada de divisão" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
