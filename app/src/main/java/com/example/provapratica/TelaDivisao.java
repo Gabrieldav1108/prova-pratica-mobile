@@ -34,7 +34,7 @@ public class TelaDivisao extends AppCompatActivity {
         String sNum1 = editTextNum1.getText().toString();
         String sNum2 = editTextNum2.getText().toString();
         float num1 = Float.parseFloat(sNum1);
-        int num2 = Integer.parseInt(sNum2);
+        float num2 = Float.parseFloat(sNum2);
         StringBuilder resultado = new StringBuilder();
 
         for (int i = 1; i <= num2; i++) {

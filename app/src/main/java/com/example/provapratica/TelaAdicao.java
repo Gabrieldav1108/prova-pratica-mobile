@@ -34,18 +34,18 @@ public class TelaAdicao extends AppCompatActivity {
     public void calcular(View v){
         String sNum1 = editTextNum1.getText().toString();
         String sNum2 = editTextNum2.getText().toString();
-        int num1 = Integer.parseInt(sNum1);
-        int num2 = Integer.parseInt(sNum2);
+        float num1 = Float.parseFloat(sNum1);
+        float num2 = Float.parseFloat(sNum2);
         StringBuilder resultado = new StringBuilder();
 
         for (int i = 1; i <= num2; i++) {
-            int mult = num1 + i;
+            float mult = num1 + i;
             resultado
                     .append(num1)
                     .append(" + ")
                     .append(i)
                     .append(" = ")
-                    .append(mult)
+                    .append(String.format("%.2f", mult))
                     .append("\n");
         }
         textViewResult.setText(resultado.toString());
